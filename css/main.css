@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.rows {
+  display: flex;
+}
+
+
+.title {
+  text-align: center;
+  margin: 3rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: block;
+  border-radius: 5px;
+  border: 3px solid #e3e3e3;
+  background: #eaeaea;
+  padding: .5rem;
+  transition: all .2s ease;
+  cursor: pointer;
+  font-size: .9rem;
+  line-height: .9rem;
+}
+
+.buttons-wrapper {
+  padding: 2rem 0;
+}
+.buttons-wrapper > .item {
+  margin-right: 1rem;
+}
+
+.button:hover {
+  box-shadow: 0 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.button:active {
+  background: #cecece;
+}
+.button:disabled {
+  background: #eeeeee!important;
+  color: rgb(185, 185, 185)!important;
+  border: 3px solid #bebebe!important;
+  cursor: not-allowed;
+}
+.button:disabled:hover {
+  box-shadow: 0 0 2px 3px rgba(0,0,0,0.2)!important;
+}
+
+.button.red {
+  border: 3px solid #ff6262;
+  background: #ff1919;
+  color: #fff;
+}
+.button.red:hover {
+  box-shadow: 0 0 2px 3px rgba(255, 0, 0, 0.2);
+}
+
+.button.red:active {
+  background: #ed1717;
+}
+
+.button.green {
+  border: 3px solid #48ef06;
+  background: #08c605;
+  color: #fff;
+}
+.button.green:hover {
+  box-shadow: 0 0 2px 3px rgba(0, 255, 30, 0.5);
+}
+
+.button.green:active {
+  background: rgb(31, 134, 0);
+}
+
+.button.yellow {
+  border: 3px solid #ffdf00;
+  background: #f9d800;
+  color: #fff;
+}
+.button.yellow:hover {
+  box-shadow: 0 0 2px 3px rgba(255, 191, 0, 0.2);
+}
+
+
+.button.yellow:active {
+  background: #eacb00;
+}
+
+.player-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-player {
+  width: 50%;
+  height: auto;
+}
+
+.video-player.preview {
+  background: #000;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.status {
+  margin-bottom: 2rem;
+}
+
+.status > h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+}

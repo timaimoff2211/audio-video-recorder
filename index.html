@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio video recorder</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+      <h1 class="title">Audio Video Recorder</h1>
+      <div class="rows buttons-wrapper">
+        <div class="item">
+          <button class="button green" id="activate-btn">Включить камеру и микрофон</button>
+        </div>
+        <div class="item">
+          <button class="button yellow" id="disactivate-btn" disabled>Выключить камеру и микрофон</button>
+        </div>
+
+        <div class="item">
+          <button class="button red" id="record-btn" disabled>Начать запись</button>
+        </div>
+        <div class="item">
+          <button class="button yellow" id="stop-btn" disabled>Остановить запись</button>
+        </div>
+        <div class="item">
+          <a class="button green hide" href="#" id="download-btn">Скачать запись</a>
+        </div>
+      </div>
+      <div class="status">
+        <h3 id="status-text">Камера и микрофона не активированы</h3>
+      </div>
+      <div class="player-wrapper">
+        <video id="preview" class="video-player preview" autoplay></video>
+        <video id="video-player" class="video-player record hide" controls></video>
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
